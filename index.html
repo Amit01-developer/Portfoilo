@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Personal Profile Page of Tushar">
+        <title>Amit's Profile</title>
+        <link rel="icon" href="icon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <script src="script.js" defer></script>
+    </head>
+
+
+    <body>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a class='nav-logo' href='/'>
+                    <img src="amit logo.png"  alt="Amit's Logo">
+                </a>
+                <div class="nav-toggle"><i class="fas fa-bars"></i></div>
+            </div>
+            <div class="nav-menu">           
+            <!--<a href="index.html">Home</a>
+                <a href="contact.html">Contact Me</a> -->
+                <a href="resume of amit.pdf" class="resume-button" download>Download Resume</a>
+                <div id="dark-mode-toggle" class="dark-mode-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </div>
+        </nav>
+
+        <header>
+            <img src="amit.jpg" alt="Amit picture">
+            <h1>Hello, I am Amit, a <span class="about-me"></span></h1>
+                 <p>
+                    "Passionate about seamlessly connecting technology and user experience,
+                     I am an BTech student with a keen interest in full-stack development and problem-solving.
+                      Skilled in HTML,CSS, and C++, I enjoy building efficient and user-friendly web solutions.
+                      I thrive on problem-solving and innovation, aiming to contribute to
+                   projects that push technological boundaries. Eager to collaborate with like-minded teams.
+                       Currently, I am exploring hackathons and actively learning in the coding era as a beginner, 
+                    eager to take on new challenges and grow in the tech world!" 🚀
+                 </p>
+        </header>
+
+        <div class="content-container">
+            <section>
+                <h2>My Technical Skills</h2>
+                <div class="skills-list">
+                    <ul class="skills-list">
+                        <li>Web Development</li>
+                        <li>Graphic Design</li>
+                        <li>Photography</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="horizontal-scroll">
+                <div class="icon-container">
+                    <img src="htm.png" alt="Icon 1">
+                    <img src="htmll.jpeg" alt="Icon 2">
+                    <img src="java.png" alt="Icon 3">
+                    <img src="images.png" alt="Icon 4">
+                    <img src="download.png" alt="Icon 5">                   
+                    <img src="jaava.png" alt="Icon 6">
+                    <img src="download1.jpg" alt="Icon 7">
+                    <img src="javva.png" alt="Icon 8">
+            
+                </div>
+            </section>
+            <hr>
+
+            <section id="programming-languages">
+                <h2>Programming Languages</h2>
+                <div class="skill">
+                    <p>HTML</p>
+                    <div class="progress-bar" data-progress="80"></div>
+                </div>
+                <div class="skill">
+                    <p>CSS</p>
+                    <div class="progress-bar" data-progress="60"></div>
+                </div>
+                <div class="skill">
+                    <p>C++</p>
+                    <div class="progress-bar" data-progress="50"></div>
+                </div>                
+                <div class="skill">
+                    <p>Python</p>
+                    <div class="progress-bar" data-progress="40"></div>
+                </div>
+            </section>
+            <hr>    
+
+            <section>
+                <h2>My Projects</h2>
+                <p>Take a look at some of my works.</p>
+                <section id="projects">
+                    <div class="project-thumbnail">
+                        <div class="thumbnail-content">
+                            <img src="IMG-20241207-WA0012.jpg" alt="Project 1">
+                            <h3>E-Commerce Website</h3>
+                            <p>Selling Books</p>
+                            <a href="#" class="btn know-more" data-modal-target="#projectModal1">Know More</a>
+                        </div>
+                    </div>
+                    <div class="project-thumbnail">
+                        <div class="thumbnail-content">
+                            <img src="web.jpeg" alt="Project 2">
+                            <h3>Project</h3>
+                            <p>Description of Project 1</p>
+                            <a href="#" class="btn know-more" data-modal-target="#projectModal2">Know More</a>
+
+                        </div>
+                    </div>
+                    <div class="project-thumbnail">
+                        <div class="thumbnail-content">
+                            <img src="automatio.jpeg" alt="Project 3">
+                            <h3>Project</h3>
+                            <p>Description of Project 1</p>
+                            <a href="#" class="btn know-more" data-modal-target="#projectModal3">Know More</a>
+                        </div>
+                    </div>                        
+            
+                    <!-- Repeat the above structure for each project -->
+                </section>
+                <!--<p><a href="6_project.html">Project 1</a> | <a href="https://www.pantechsolutions.net/deep-learning-based-food-calorie-estimation-method-in-dietary-assessment">Project 2</a></p>-->
+            </section>
+            <hr>
+            
+            <section>
+                <h2>Contact Me</h2>
+                <form method='POST' name='contact'><input type='hidden' name='form-name' value='contact' />
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                    </div>
+            
+                    <button type="submit">Send Message</button>                
+                </form>
+            </section>
+            <hr>
+
+            <section>
+                <h2>Contact Information</h2>
+                <p>Let's connect!</p>
+                <a href="mailto:mr.amit16chaurasiya@gmail.com" class="icon-link email-icon"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/amit-chaurasiya-575948330/" class="icon-link linkedin-icon"><i class="fab fa-linkedin"></i></a><br>
+                
+                <p>Follow Me!</p>
+                <a href="https://www.instagram.com/the_amit_116?igsh=MW9uYjZ2MWZuMW82MA==" class="icon-link instagram-icon">
+                    <i class="fab fa-instagram" ></i></a>        
+                <br><br>   
+            </section>
+
+
+        </div>
+        <footer>
+            <p>&copy; Built by Amit.</p>
+        </footer>
+
+
+        <!-- Project Information Modal -->
+        <!-- Project Information Modal -->
+        <div id="projectModal1" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Project Title 1</h2>
+                <hr>
+                <div class="modal-body">
+                    <div class="modal-row">
+                        <div class="column description">
+                            <p>Short Project Overview: This project is a comprehensive exploration...</p>
+                            <a href="https://github.com/yourgithubrepo" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+                        </div>
+                        <div class="column image-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide">
+                                    <img src="IMG-20241207-WA0012.jpg" alt="Project Image 1">
+                                    <img src="imgjpeg" alt="Project Image 2">
+                                    <img src="img.jpeg" alt="Project Image 3">
+                                </div>
+                                <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+                                <a class="next" onclick="moveSlide(1)">&#10095;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-row">
+                        <div class="column">
+                            <h3>Project Details</h3>
+                            <ul>
+                                <li>Utilizes ROS for managing robot software components.</li>
+                                <li>Incorporates machine learning for traffic sign recognition.</li>
+                                <li>Features real-time obstacle detection using LIDAR.</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h3>Project Video</h3>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/0eANnlfV4W0?si=tcJQSdp_Kg05G9Yx" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="projectModal2" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Project Title 2</h2>
+                <hr>
+                <div class="modal-body">
+                    <div class="modal-row">
+                        <div class="column description">
+                            <p>Short Project Overview: This project is a comprehensive exploration...</p>
+                            <a href="https://github.com/yourgithubrepo" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+                        </div>
+                        <div class="column image-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide">
+                                    <img src="web.jpeg" alt="Project Image 4">
+                                    <img src="img1.png" alt="Project Image 5">
+                                    <img src="img1.png" alt="Project Image 6">
+                                </div>
+                                <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+                                <a class="next" onclick="moveSlide(1)">&#10095;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-row">
+                        <div class="column">
+                            <h3>Project Details</h3>
+                            <ul>
+                                <li>Utilizes ROS for managing robot software components.</li>
+                                <li>Incorporates machine learning for traffic sign recognition.</li>
+                                <li>Features real-time obstacle detection using LIDAR.</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h3>Project Video</h3>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/yourvideoid" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="projectModal3" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Project Title 3</h2>
+                <hr>
+                <div class="modal-body">
+                    <div class="modal-row">
+                        <div class="column description">
+                            <p>Short Project Overview: This project is a comprehensive exploration...</p>
+                            <a href="https://github.com/yourgithubrepo" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+                        </div>
+                        <div class="column image-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide">
+                                    <img src="automatio.jpeg" alt="Project Image 7">
+                                    <img src="img2.png" alt="Project Image 8">
+                                    <img src="img1.png" alt="Project Image 9">
+                                </div>
+                                <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+                                <a class="next" onclick="moveSlide(1)">&#10095;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-row">
+                        <div class="column">
+                            <h3>Project Details</h3>
+                            <ul>
+                                <li>Utilizes ROS for managing robot software components.</li>
+                                <li>Incorporates machine learning for traffic sign recognition.</li>
+                                <li>Features real-time obstacle detection using LIDAR.</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h3>Project Video</h3>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/yourvideoid" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>  
+
+    </body>
+</html>
